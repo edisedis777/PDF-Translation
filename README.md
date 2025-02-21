@@ -130,9 +130,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - **edisedis777** - *Initial work* - [GitHub](https://github.com/edisedis777)
 
 ## **Acknowledgments**
-- Tableau Server Client library
-- GitPython contributors
-- TQDM progress bar library
+- pdfplumber Library
+- deep-translator library
+- weasyprint PyPDF2 library
 
 ## **Support**
 For support, please create an issue in the GitHub repository or contact the maintainers.
