@@ -1,6 +1,6 @@
 # PDF-Translation
 
-## Translate PDF documents by extracting text to markdown, translating, and converting markdown back to PDF
+## Easily extract text from PDFs while preserving formatting, translate the content accurately, and convert it back into a well-structured, professional PDF.
 
 ### Features
 This program provides the following functionalities:
