@@ -1,99 +1,138 @@
 # PDF-Translation
-## Translate PDF document by extraction to markdown, translation, and markdown to PDF conversion
 
-### This program provides the following features:
-##### - Extracts text from PDF while attempting to preserve formatting
-##### - Detects and formats headers
-##### - Preserves bullet points
-##### - Maintains paragraph breaks
-##### - Splits the content into files of 100 pages each
-##### - Adds page separators between pages
-##### - Includes error handling and progress feedback
+## Translate PDF documents by extracting text to markdown, translating, and converting markdown back to PDF
 
-### To use this program, you'll need to: 
-- install the required library: pip install pdfplumber
-- modify the pdf_path and output_dir variables to match your needs
+### Features
+This program provides the following functionalities:
 
-#### Key points:
-##### - Original indentation is now preserved using leading spaces
-##### - Empty lines are kept exactly as they appear in the source
-##### - Headers are detected more accurately based on positioning and style
-##### - List formatting is preserved while maintaining original indentation
-##### - Page breaks are more clearly marked with separator lines
-##### - Added parameter to better handle column detection
-##### - Improved header detection
-##### - Better handling of list items and indentation
-##### - Exception re-raising for better error debugging
+- Extracts text from PDFs while attempting to preserve formatting
+- Detects and formats headers
+- Preserves bullet points
+- Maintains paragraph breaks
+- Splits the content into files of 100 pages each
+- Adds page separators between pages
+- Includes error handling and progress feedback
 
-### Translation
+## **PDF Extraction**
+### **Requirements**
+To use this program, install the required library:
+sh
+pip install pdfplumber
 
-### To use this program, you'll need to: 
--install the required library: pip install googletrans
+Modify the `pdf_path` and `output_dir` variables in the script to match your needs.
 
-#### Key points:
-##### -Preserves all markdown formatting including: 
-Headers,
-Code blocks,
-Inline code,
-Links,
-Line breaks
-##### - Handles large files by splitting them into chunks
-##### - Includes retry mechanism with exponential backoff
-##### - Preserves original file names with "_english" suffix
+### **Key Improvements**
+- Original indentation is now preserved using leading spaces
+- Empty lines are kept exactly as they appear in the source
+- Headers are detected more accurately based on positioning and style
+- List formatting is preserved while maintaining original indentation
+- Page breaks are more clearly marked with separator lines
+- Added parameter to better handle column detection
+- Improved header detection
+- Better handling of list items and indentation
+- Enhanced exception handling for better debugging
 
-#### Note: The script uses the free deep_translator library which is more stable and doesn't require async handling.
+---
+
+## **Translation**
+### **Requirements**
+Install the required translation library:
+sh
+pip install deep-translator
 
 
-### Translated Markdown Text to PDF conversion
+### **Key Features**
+- Preserves all markdown formatting, including:
+  - Headers
+  - Code blocks
+  - Inline code
+  - Links
+  - Line breaks
+- Handles large files by splitting them into chunks
+- Includes a retry mechanism with exponential backoff
+- Preserves original file names with an "_english" suffix
 
-#### To use this program, you'll need to: 
-- install the required library: pip install markdown weasyprint PyPDF2
-#### Note: WeasyPrint has some system dependencies:
-- On macOS: brew install cairo pango
-- On Ubuntu/Debian: sudo apt-get install build-essential python3-dev python3-pip python3-setuptools python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
-- On Windows: Follow WeasyPrint's installation guide for Windows
+**Note:** The script uses the free `deep_translator` library, which is more stable and does not require async handling.
 
-#### Key points in the PDF conversion section:
-##### -Document Structure:
-Professional margins and page size,
-Page numbers at bottom center,
-Proper spacing between elements,
-Automatic page breaks before new sections
+---
 
-##### -Typography:
-Times New Roman for body text (more readable for long documents),
-Arial for headings (better contrast),
-Optimized font sizes and line heights,
-Justified text alignment with hyphenation
+## **Markdown to PDF Conversion**
+### **Requirements**
+To convert translated markdown text into a professional-looking PDF, install:
+sh
+pip install markdown weasyprint PyPDF2
 
-##### -Headings:
-Clear visual hierarchy,
-Proper spacing before and after,
-No page breaks after headers
 
-##### -Lists:
-Proper indentation,
-Different bullet styles for nested levels,
-Consistent spacing,
-Better line height for readability
+#### **WeasyPrint Dependencies**
+Depending on your operating system, additional dependencies may be required:
 
-##### -Tables:
-Full-width design,
-Subtle borders,
-Proper cell padding,
-No page breaks within tables
+- **macOS:**
+  sh
+  brew install cairo pango
+  
+- **Ubuntu/Debian:**
+  sh
+  sudo apt-get install build-essential python3-dev python3-pip python3-setuptools python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
+  
+- **Windows:**
+  Follow WeasyPrint's [installation guide](https://weasyprint.org/) for Windows.
 
-##### -Code Blocks:
-Monospace font,
-Light background,
-Rounded corners,
-Proper padding,
-Overflow handling,
-No page breaks within blocks
+### **Key Enhancements in PDF Formatting**
+#### **Document Structure**
+- Professional margins and page size
+- Page numbers centered at the bottom
+- Proper spacing between elements
+- Automatic page breaks before new sections
 
-##### -Additional Features:
-Styled blockquotes,
-Proper link colors,
-Responsive images,
-Horizontal rules
+#### **Typography**
+- **Body text:** Times New Roman (optimized for readability)
+- **Headings:** Arial (better contrast)
+- Optimized font sizes and line heights
+- Justified text alignment with hyphenation
 
+#### **Headings**
+- Clear visual hierarchy
+- Proper spacing before and after
+- No page breaks immediately after headers
+
+#### **Lists**
+- Proper indentation
+- Different bullet styles for nested levels
+- Consistent spacing
+- Improved line height for readability
+
+#### **Tables**
+- Full-width design
+- Subtle borders
+- Proper cell padding
+- No page breaks within tables
+
+#### **Code Blocks**
+- Monospace font
+- Light background
+- Rounded corners
+- Proper padding
+- Overflow handling
+- No page breaks within blocks
+
+#### **Additional Features**
+- Styled blockquotes
+- Proper link colors
+- Responsive images
+- Horizontal rules
+
+---
+
+## **License**
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## **Authors**
+- **edisedis777** - *Initial work* - [GitHub](https://github.com/edisedis777)
+
+## **Acknowledgments**
+- Tableau Server Client library
+- GitPython contributors
+- TQDM progress bar library
+
+## **Support**
+For support, please create an issue in the GitHub repository or contact the maintainers.
