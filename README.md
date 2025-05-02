@@ -2,7 +2,6 @@
 [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
 [![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white)](#)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Easily extract text from PDFs while preserving formatting, translate the content accurately, and convert it back into a well-structured, professional PDF.
 
@@ -125,16 +124,14 @@ Depending on your operating system, additional dependencies may be required:
 - Responsive images
 - Horizontal rules
 
----
-
-## **License**
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
 ## **Credits**
 - pdfplumber Library
 - deep-translator library
 - weasyprint PyPDF2 library
+
+## **License**
+-bDistributed under the GNU Affero General Public License v3.0 License. See `LICENSE` for more information.
+
 
 <div align="right">
 
