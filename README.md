@@ -130,7 +130,7 @@ Depending on your operating system, additional dependencies may be required:
 - weasyprint PyPDF2 library
 
 ## **License**
--bDistributed under the GNU Affero General Public License v3.0 License. See `LICENSE` for more information.
+- Distributed under the GNU Affero General Public License v3.0 License. See `LICENSE` for more information.
 
 
 <div align="right">
